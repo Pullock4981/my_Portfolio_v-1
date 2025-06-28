@@ -8,7 +8,7 @@ const Banner = () => {
         <div className='bg-gradient-to-br from-[#2b2b2b] to-[#131212] p-8 rounded-3xl'>
             <div className='flex md:flex-row flex-col justify-between items-center gap-6'>
                 <div className='lg:w-[45%]'>
-                    <img className='rounded-tl-3xl rounded-br-3xl h-52' src={profile} alt="" />
+                    <img className='rounded-tl-3xl rounded-br-3xl w-full h-52' src={profile} alt="" />
                 </div>
                 <div className='lg:w-[50%]'>
                     <p className='text-gray-400 text-center lg:text-start font-bold'>
