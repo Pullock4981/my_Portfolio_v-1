@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from "../assets/logo.png"
+import newLogo from "../assets/A-Logo.png"
 import { Link, NavLink } from 'react-router';
 import './Navbar.css';
 
@@ -15,7 +16,7 @@ const NavBar = () => {
         </div>
     </>
     return (
-        <div className="navbar bg-black text-white max-w-7xl mx-auto md:px-20 py-4 shadow-sm">
+        <div className="navbar bg-black text-white max-w-7xl mx-auto md:px-20 py-4 shadow-sm sticky top-0 z-50 backdrop-blur bg-opacity-90">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -31,7 +32,9 @@ const NavBar = () => {
                 </div>
 
                 <Link to="/">
-                    <img className='md:w-28 w-16' src={logo} alt="" />
+                    <img className='md:w-28 w-16 hidden lg:block' src={logo} alt="" />
+                    <img className='lg:w-28 w-12 block lg:hidden' src={newLogo} alt="" />
+
                 </Link>
 
             </div>

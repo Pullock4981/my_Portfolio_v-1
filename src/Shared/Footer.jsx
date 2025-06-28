@@ -9,7 +9,7 @@ const Footer = () => {
                     className='h-20'
                     src={logo} alt="" />
                 
-                <p>© All rights reserved by <span className='text-[#5B78F6]'>Syed Ashik Mahmud Pullock</span></p>
+                <p>© All rights reserved by <span className='text-sky-600'>Syed Ashik Mahmud Pullock</span></p>
             </aside>
         </footer>
     );
