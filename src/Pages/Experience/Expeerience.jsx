@@ -8,7 +8,7 @@ const Expeerience = () => {
                     EXPERIENCE
                 </h1>
                 {/* bsc */}
-                <div>
+                <div className='bg-gradient-to-br from-[#2b2b2b] to-[#131212] rounded-3xl p-6'>
                     <p className='text-gray-400 mb-1'>
                         Jan-2023 to Sep-2023
                     </p>

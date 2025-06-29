@@ -20,7 +20,7 @@ const AboutMe = () => {
                     <Expeerience></Expeerience>
                 </div>
             </div>
-            <div className='max-w-7xl md:mx-auto mt-4 md:px-20 py-4 flex justify-between items-center gap-6'>
+            <div className='max-w-7xl md:mx-auto mt-4 md:px-20 py-4 flex lg:flex-row flex-col-reverse justify-between items-center gap-6'>
 
                 <div className='lg:w-[50%]'>
                     <SocialLinks></SocialLinks>

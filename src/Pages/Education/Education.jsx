@@ -8,7 +8,7 @@ const Education = () => {
                     EDUCATION
                 </h1>
                 {/* bsc */}
-                <div>
+                <div className='bg-gradient-to-br from-[#2b2b2b] to-[#131212] rounded-3xl p-6'>
                     <p className='text-gray-400 mb-1'>
                         2022 - Ongoing
                     </p>
@@ -20,7 +20,7 @@ const Education = () => {
                     </p>
                 </div>
                 {/* higher secondery */}
-                <div className='mt-6'>
+                <div className='mt-6 bg-gradient-to-br from-[#2b2b2b] to-[#131212] rounded-3xl p-6'>
                     <p className='text-gray-400 mb-1'>
                         2017 - 2019
                     </p>
@@ -32,7 +32,7 @@ const Education = () => {
                     </p>
                 </div>
                 {/* secondery */}
-                <div className='mt-6'>
+                <div className='mt-6 bg-gradient-to-br from-[#2b2b2b] to-[#131212] rounded-3xl p-6'>
                     <p className='text-gray-400 mb-1'>
                         2012-2017
                     </p>
