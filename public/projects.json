@@ -13,5 +13,20 @@
     "githubC": "https://github.com/Pullock4981/hobby-hub-client-side",
     "githubS": "https://github.com/Pullock4981/hobby-hub-server-side",
     "live": "https://hobbyhub-4981.netlify.app/"
+  },
+  {
+    "id": 2,
+    "title": "ForkFlow",
+    "description": "This is a full-stack web application designed to manage restaurant operations such as food listing, ordering, and user management. It consists of a React-based frontend and an Express + MongoDB backend, with Firebase authentication for secure login and registration.",
+    "technologies": ["React", "Tailwind CSS", "MongoDB","Firebase","node.Js", "Express.js","daisyUI","Former Motion","Admin SDK"],
+    "features": [
+      "Dual Deployment & Role Separation Architecture",
+      "Smart Order Lifecycle with Delete Functionality",
+      "Hybrid Authentication with Token Forwarding to Backend"
+    ],
+    "image": "https://i.ibb.co/S4rPYJ5g/p-2.png",
+    "githubC": "https://github.com/Pullock4981/resturant-app-client-side",
+    "githubS": "https://github.com/Programming-Hero-Web-Course4/b11a11-server-side-Pullock4981",
+    "live": "https://resturent-clint-side.netlify.app/"
   }
 ]

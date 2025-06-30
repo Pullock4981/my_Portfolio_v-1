@@ -56,7 +56,7 @@ const Projects = () => {
                             </div>
 
                             <div className="flex gap-3 mt-auto">
-                                <a href={project.live} target="_blank" rel="noreferrer" className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-sm">Live</a>
+                                <a href={project.live} target="_blank" rel="noreferrer" className="bg-sky-600 hover:bg-sky-700 px-4 py-2 rounded text-sm">Live</a>
                                 <a href={project.githubC} target="_blank" rel="noreferrer" className="bg-gray-600 hover:bg-gray-700 px-4 py-2 rounded text-sm">Client Code</a>
                                 <a href={project.githubS} target="_blank" rel="noreferrer" className="bg-gray-600 hover:bg-gray-700 px-4 py-2 rounded text-sm">Server Code</a>
                                 

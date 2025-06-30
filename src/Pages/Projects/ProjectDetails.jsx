@@ -38,7 +38,7 @@ const ProjectDetails = () => {
             </div>
 
             <div className="flex gap-4">
-                <a href={project.live} className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded">Live</a>
+                <a href={project.live} className="bg-sky-600 hover:bg-sky-700 px-4 py-2 rounded">Live</a>
                 <a href={project.githubC} className="bg-gray-600 hover:bg-gray-700 px-4 py-2 rounded">Client</a>
                 <a href={project.githubS} className="bg-gray-600 hover:bg-gray-700 px-4 py-2 rounded">Server</a>
             </div>
