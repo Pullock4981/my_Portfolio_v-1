@@ -1,7 +1,5 @@
 import React from 'react';
 import profile from "../../assets/Ashik.profile_1.0.jpg"
-import { FiGithub } from 'react-icons/fi';
-import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 
 const Banner = () => {
     return (
@@ -22,27 +20,8 @@ const Banner = () => {
                     </p>
                     <div className='flex justify-center gap-6 mt-4'>
 
-                        {/* <a
-                            target='_blank'
-                            className='bg-gray-600 hover:bg-white hover:text-black p-3 text-2xl rounded-full items-center'
-                            href="https://github.com/Pullock4981">
-                            <FiGithub />
-                        </a>
                         <a
-                            target='_blank'
-                            className='bg-gray-600 hover:bg-white hover:text-black p-3 text-2xl rounded-full items-center'
-                            href="https://www.linkedin.com/in/ashikpullock/">
-                            <FaLinkedinIn />
-                        </a>
-                        <a
-                            target='_blank'
-                            className='bg-gray-600 hover:bg-white hover:text-black p-3 text-2xl rounded-full items-center'
-                            href="https://www.facebook.com/mahmudashik.pullock">
-                            <FaFacebookF />
-                        </a> */}
-                        <a
-                            target='_blank'
-                            href='https://drive.google.com/file/d/1xozYHydK6FAVCWWyRFwK7ie0O0Vu9i37/view?usp=drive_link'
+                            href='https://drive.google.com/file/d/154roOh-V0QwrXfLweBdHM4R1LdHUEG93/view?usp=drivesdk'
                             className="bg-gray-700 text-white md:text-lg font-bold border-0 rounded-xl md:px-6 px-3 py-2 cursor-pointer hover:bg-white hover:text-black">
                             My Resume
                         </a>
