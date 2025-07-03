@@ -47,8 +47,7 @@ const NavBar = () => {
             </div>
             <div className="navbar-end">
                 <a
-                    target='_blank'
-                    href='https://drive.google.com/file/d/1xozYHydK6FAVCWWyRFwK7ie0O0Vu9i37/view?usp=drive_link'
+                    href='https://drive.google.com/file/d/154roOh-V0QwrXfLweBdHM4R1LdHUEG93/view?usp=drivesdk'
                     className="bg-gray-700 text-white md:text-lg font-bold border-0 rounded-xl md:px-6 px-3 py-2 cursor-pointer hover:bg-white hover:text-black">
                     My Resume
                 </a>
