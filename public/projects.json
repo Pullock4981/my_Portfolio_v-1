@@ -1,32 +1,200 @@
 [
   {
     "id": 1,
-    "title": "HobbyHub",
-    "description": "Hobby Hub is a modern React app for discovering, joining, or creating hobby groups. It features Tailwind CSS, DaisyUI themes, Firebase authentication, dark/light mode, and animated stats, offering a seamless, interactive user experience for hobby enthusiasts.",
-    "technologies": ["React", "Tailwind CSS", "MongoDB","Firebase","node.Js", "Express.js","daisyUI","Former Motion"],
-    "features": [
-      "Interest-Based Hobby Group Discovery",
-      "Live Theme Synchronization with User Preference",
-      "Gamified Member Stats & Achievements"
+    "title": "PawsNest",
+    "description": "PawsNest is a pet adoption platform built with React that allows users to browse, add, and adopt pets. Featuring a fully responsive UI with Tailwind CSS and DaisyUI v4, it supports role-based dashboards, Firebase authentication, and dynamic theme switching between light and dark modes.",
+    "longDescription": "PawsNest is a full-stack pet adoption web application designed to help individuals discover and adopt pets like dogs, cats, rabbits, and more. Users can sign up and log in through Firebase Authentication and navigate between various sections of the app including the homepage, pet category section, user dashboard, and admin dashboard. Users can list their own pets for adoption, update information, or mark pets as adopted. Admins have extended control to view all users and manage access.\n\nThe site also includes a donation feature (integrated with Stripe), a visually engaging call-to-action area, and a beautifully styled About Us page. The application is built using React for the front-end, Express.js and MongoDB for the back-end, and uses TailwindCSS with DaisyUI for a clean and responsive UI. All API routes are protected properly, and user roles (admin/user) are enforced both in the client and server sides for security.",
+    "technologies": [
+      "React",
+      "Tailwind CSS",
+      "DaisyUI v4",
+      "Firebase",
+      "MongoDB",
+      "Express.js",
+      "Node.js",
+      "TanStack Table",
+      "SweetAlert2",
+      "Stripe"
     ],
-    "image": "https://i.ibb.co/6RrTySwM/p-1.png",
-    "githubC": "https://github.com/Pullock4981/hobby-hub-client-side",
-    "githubS": "https://github.com/Pullock4981/hobby-hub-server-side",
-    "live": "https://hobbyhub-4981.netlify.app/"
+    "features": [
+      "User & Admin Dashboards with Role-Based Access",
+      "Pet Listings with CRUD Operations",
+      "Stripe Payment Integration for Donations"
+    ],
+    "featuresDescribe": [
+      {
+        "title": "Pet Listings with CRUD",
+        "detail": "Users can add new pets for adoption, update their details, delete them, or mark them as adopted. Admins have broader visibility and control."
+      },
+      {
+        "title": "Role-Based Dashboards",
+        "detail": "Users have access to manage their own pets and donations. Admins can monitor all users and their activities across the platform."
+      },
+      {
+        "title": "Stripe Donation System",
+        "detail": "Users can make secure donations to support the platform using Stripe. Payment status is handled and stored correctly."
+      },
+      {
+        "title": "Dynamic Theme Support",
+        "detail": "Users can toggle between dark and light themes using DaisyUI, with preferences saved locally."
+      },
+      {
+        "title": "Secure Routes & Authentication",
+        "detail": "Firebase is used for user auth. Private routes and dashboards are protected with route guards based on user roles."
+      }
+    ],
+    "error": [
+      {
+        "problem": "React Router Not Navigating Properly",
+        "solution": "The issue was caused by mismatched route versions. Resolved by updating `react-router-dom` to version 7+ and properly setting up `createBrowserRouter`."
+      },
+      {
+        "problem": "Dashboard Routes Not Restricting by Role",
+        "solution": "Implemented a `PrivateRoute` and `AdminRoute` using context and server verification to enforce access control on sensitive paths."
+      },
+      {
+        "problem": "Stripe Integration Failing in Live Mode",
+        "solution": "Fixed by ensuring Stripe secret and publishable keys were correctly set in the environment variables and Vercel's project settings."
+      },
+      {
+        "problem": "Data Not Displaying in Table (TanStack)",
+        "solution": "TanStack Table v8 required memoized column and row data. Used `useMemo` hook properly and passed correct data formats to avoid blank rows."
+      }
+    ],
+    "image": "https://i.ibb.co/zHQhbc8q/Screenshot-2025-07-30-143240.png",
+    "githubC": "https://github.com/Programming-Hero-Web-Course4/b11a12-client-side-Pullock4981",
+    "githubS": "https://github.com/Programming-Hero-Web-Course4/b11a12-server-side-Pullock4981",
+    "live": "https://petnest4981.netlify.app/"
   },
   {
     "id": 2,
     "title": "ForkFlow",
-    "description": "This is a full-stack web application designed to manage restaurant operations such as food listing, ordering, and user management. It consists of a React-based frontend and an Express + MongoDB backend, with Firebase authentication for secure login and registration.",
-    "technologies": ["React", "Tailwind CSS", "MongoDB","Firebase","node.Js", "Express.js","daisyUI","Former Motion","Admin SDK"],
+    "description": "ForkFlow is a restaurant management web application that enables users to explore, add, and order food items. Built with React and secured with Firebase authentication, it features a fully responsive UI and role-based functionalities for both general users and food creators.",
+    "longDescription": "ForkFlow is a full-stack restaurant management platform where users can browse all available food items, place orders, manage their own listings, and view order history. Authenticated users can list their own food items, update them, or remove them from the platform. The application also distinguishes between food creators and general users, ensuring proper permissions.\n\nThe platform includes a dynamic search and sort system, a clean responsive interface using Tailwind CSS and DaisyUI, and robust backend APIs built with Express.js and MongoDB. Firebase Authentication provides secure login and user session handling. The project supports token-based auth forwarding for secure communication between client and server.",
+    "technologies": [
+      "React",
+      "Tailwind CSS",
+      "DaisyUI",
+      "Firebase",
+      "MongoDB",
+      "Express.js",
+      "Node.js",
+      "Framer Motion",
+      "Admin SDK"
+    ],
     "features": [
       "Dual Deployment & Role Separation Architecture",
       "Smart Order Lifecycle with Delete Functionality",
       "Hybrid Authentication with Token Forwarding to Backend"
     ],
+    "featuresDescribe": [
+      {
+        "title": "Role-Based Access & Deployment",
+        "detail": "Users and food creators are handled separately with role-based functionalities. The platform is deployed on both Netlify and Render for client-server separation."
+      },
+      {
+        "title": "Smart Ordering System",
+        "detail": "Users can order food items, view status, and cancel orders. Item owners can manage their own listed foods including marking as unavailable (out of stock)."
+      },
+      {
+        "title": "Authentication & Security",
+        "detail": "Users register and log in using Firebase. Tokens are forwarded securely to backend APIs for route protection and role verification."
+      },
+      {
+        "title": "Food Filtering & Sorting",
+        "detail": "Includes search and (upgradable) sorting functionality to help users navigate food items based on name or availability."
+      },
+      {
+        "title": "Modern UI/UX Design",
+        "detail": "Uses Tailwind CSS, DaisyUI, and Framer Motion to deliver a smooth and responsive user experience."
+      }
+    ],
+    "error": [
+      {
+        "problem": "Token Not Forwarding to Backend",
+        "solution": "Implemented secure token forwarding using Firebase Admin SDK and added middleware in Express to validate requests."
+      },
+      {
+        "problem": "Out of Stock Foods Still Clickable",
+        "solution": "Added conditional rendering logic to disable 'View Details' buttons when the item is marked out of stock or owned by the user."
+      },
+      {
+        "problem": "User Role Not Persisting After Refresh",
+        "solution": "Used local storage and backend token validation to restore role-based UI elements after page reloads."
+      },
+      {
+        "problem": "Search Not Case-Insensitive",
+        "solution": "Updated search filter to use `.toLowerCase()` on both input and item names to ensure consistent results."
+      }
+    ],
     "image": "https://i.ibb.co/S4rPYJ5g/p-2.png",
     "githubC": "https://github.com/Pullock4981/resturant-app-client-side",
-    "githubS": "https://github.com/Programming-Hero-Web-Course4/b11a11-server-side-Pullock4981",
+    "githubS": "https://github.com/Pullock4981/resturent-server",
     "live": "https://resturent-clint-side.netlify.app/"
+  },
+  {
+    "id": 3,
+    "title": "HobbyHub",
+    "description": "Hobby Hub is a modern React app for discovering, joining, or creating hobby groups. It features Tailwind CSS, DaisyUI themes, Firebase authentication, dark/light mode, and animated stats, offering a seamless, interactive user experience for hobby enthusiasts.",
+    "longDescription": "HobbyHub is a community-based platform where users can explore, join, or create hobby groups based on their personal interests. Built with a modern tech stack including React, Firebase, and MongoDB, the application allows authenticated users to interact with various groups, track participation stats, and manage their own communities. It supports light/dark mode, responsive layout, and category-based filtering for an immersive experience.\n\nThe backend is powered by Node.js and Express.js for efficient API handling. Firebase Authentication ensures secure user management, while MongoDB stores group and user data. HobbyHub also features animated counters for group metrics, and smooth UI transitions powered by Framer Motion.",
+    "technologies": [
+      "React",
+      "Tailwind CSS",
+      "MongoDB",
+      "Firebase",
+      "Node.js",
+      "Express.js",
+      "DaisyUI",
+      "Framer Motion"
+    ],
+    "features": [
+      "Interest-Based Hobby Group Discovery",
+      "Live Theme Synchronization with User Preference",
+      "Gamified Member Stats & Achievements"
+    ],
+    "featuresDescribe": [
+      {
+        "title": "Interest-Based Group Management",
+        "detail": "Users can browse, join, and create groups categorized by hobbies, such as photography, painting, or gaming. Each group includes details like location, category, max members, and description."
+      },
+      {
+        "title": "Dark/Light Mode with Theme Sync",
+        "detail": "The app supports real-time switching between dark and light themes, respecting user system preferences for a personalized experience."
+      },
+      {
+        "title": "Authentication & User Context",
+        "detail": "Firebase handles secure login, logout, and user session tracking. User roles and group ownership are tied to authenticated identities."
+      },
+      {
+        "title": "Animated Stats & Responsive UI",
+        "detail": "Uses React CountUp and Framer Motion to display animated metrics and smooth UI transitions across devices."
+      },
+      {
+        "title": "Clean UI with DaisyUI",
+        "detail": "Styled using Tailwind CSS and DaisyUI components, ensuring both aesthetic and accessible user interface design."
+      }
+    ],
+    "error": [
+      {
+        "problem": "Group Data Not Fetching on Some Pages",
+        "solution": "Corrected API endpoint logic and ensured proper usage of `ObjectId` from MongoDB for individual group retrieval."
+      },
+      {
+        "problem": "Dark Mode Theme Not Persisting",
+        "solution": "Implemented a theme context and stored user preference in `localStorage` to persist across sessions."
+      },
+      {
+        "problem": "User Data Not Displaying After Reload",
+        "solution": "Used Firebase `onAuthStateChanged` to monitor login state and update context data on reload."
+      },
+      {
+        "problem": "Responsive Navbar Not Collapsing on Mobile",
+        "solution": "Fixed mobile menu rendering logic and updated component state to toggle menu visibility correctly."
+      }
+    ],
+    "image": "https://i.ibb.co/6RrTySwM/p-1.png",
+    "githubC": "https://github.com/Pullock4981/hobby-hub-client-side",
+    "githubS": "https://github.com/Pullock4981/hobby-hub-server-side",
+    "live": "https://hobbyhub-4981.netlify.app/"
   }
 ]
