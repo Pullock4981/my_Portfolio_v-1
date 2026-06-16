@@ -38,8 +38,8 @@ const JavaScriptProjects = () => {
 
     // Project Card Component
     const ProjectCard = ({ project }) => (
-        <div className="flex flex-col-reverse lg:flex-row-reverse bg-[#1f1f1f] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition">
-            <div className="lg:w-1/2 p-6 flex flex-col justify-between">
+        <div className="flex flex-col-reverse bg-[#1f1f1f] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition h-full">
+            <div className="p-6 flex flex-col justify-between flex-grow">
                 <div>
                     <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
                     <p className="text-gray-400 text-sm mb-4">{project.description}</p>
@@ -75,7 +75,7 @@ const JavaScriptProjects = () => {
                     </Link>
                 </div>
             </div>
-            <div className="lg:w-1/2 p-6">
+            <div className="h-64 w-full">
                 <ImageCarousel 
                     images={project.images || project.image} 
                     title={project.title}
@@ -117,7 +117,7 @@ const JavaScriptProjects = () => {
             </div>
 
             {javascriptProjects.length > 0 ? (
-                <div className="space-y-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     {javascriptProjects.map((project) => (
                         <ProjectCard key={project.id} project={project} />
                     ))}

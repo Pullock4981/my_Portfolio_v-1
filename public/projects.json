@@ -328,12 +328,7 @@
         "solution": "TanStack Table v8 required memoized column and row data. Used `useMemo` hook properly and passed correct data formats to avoid blank rows."
       }
     ],
-    "image": "https://res.cloudinary.com/dbnmcsoch/image/upload/v1766676296/Screenshot_2025-07-30_143240_bewqvt.png",
-    "images": [
-      "https://res.cloudinary.com/dbnmcsoch/image/upload/v1766676296/Screenshot_2025-07-30_143240_bewqvt.png",
-      "https://i.ibb.co/zHQhbc8q/Screenshot-2025-07-30-143240.png",
-      "https://i.ibb.co/zHQhbc8q/Screenshot-2025-07-30-143240.png"
-    ],
+    "image": "https://placehold.co/600x400/2b2b2b/white?text=PawsNest+Project",
     "githubC": "https://github.com/Pullock4981/paw_nest_client",
     "githubS": "https://github.com/Pullock4981/paw_nest_server",
     "live": "https://petnest4981.netlify.app/"
@@ -400,12 +395,7 @@
         "solution": "Updated search filter to use `.toLowerCase()` on both input and item names to ensure consistent results."
       }
     ],
-    "image": "https://i.ibb.co/S4rPYJ5g/p-2.png",
-    "images": [
-      "https://i.ibb.co/S4rPYJ5g/p-2.png",
-      "https://i.ibb.co/S4rPYJ5g/p-2.png",
-      "https://i.ibb.co/S4rPYJ5g/p-2.png"
-    ],
+    "image": "https://placehold.co/600x400/2b2b2b/white?text=ForkFlow+Project",
     "githubC": "https://github.com/Pullock4981/resturant-app-client-side",
     "githubS": "https://github.com/Pullock4981/resturent-server",
     "live": "https://resturent-clint-side.netlify.app/"
@@ -471,12 +461,7 @@
         "solution": "Fixed mobile menu rendering logic and updated component state to toggle menu visibility correctly."
       }
     ],
-    "image": "https://i.ibb.co/6RrTySwM/p-1.png",
-    "images": [
-      "https://i.ibb.co/6RrTySwM/p-1.png",
-      "https://i.ibb.co/6RrTySwM/p-1.png",
-      "https://i.ibb.co/6RrTySwM/p-1.png"
-    ],
+    "image": "https://placehold.co/600x400/2b2b2b/white?text=HobbyHub+Project",
     "githubC": "https://github.com/Pullock4981/hobby-hub-client-side",
     "githubS": "https://github.com/Pullock4981/hobby-hub-server-side",
     "live": "https://hobbyhub-4981.netlify.app/"
