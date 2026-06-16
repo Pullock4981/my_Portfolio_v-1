@@ -1,7 +1,183 @@
 [
   {
     "id": 1,
+    "title": "eBook",
+    "category": "React.js",
+    "description": "eBook is a comprehensive MERN stack e-commerce platform supporting physical product sales, digital eBook sales, affiliate marketing system, coupon/promo codes, and multiple payment gateway integrations (SSLCommerz, bKash, Nagad). Features mobile-based OTP authentication, secure PDF reading with watermarking, and a complete admin dashboard with analytics.",
+    "longDescription": "eBook is a full-featured e-commerce platform built with React 18, Redux Toolkit, and Tailwind CSS for the frontend, and Node.js, Express.js, and MongoDB for the backend. The platform enables customers to browse and purchase both physical products and digital eBooks with advanced filtering, search, and pagination capabilities.\n\nThe platform includes a comprehensive shopping cart system with persistent storage, coupon/promo code support, and multiple payment gateway integrations including SSLCommerz, bKash, and Nagad. The eBook reading system features secure PDF serving with IP restriction, device fingerprinting, and PDF watermarking for content protection.\n\nThe affiliate marketing system allows users to register as affiliates, generate referral links, track commissions, and request withdrawals. The admin dashboard provides real-time analytics, sales reports, user management, product management, order management, affiliate management, and commission tracking.\n\nThe application supports multi-language (English and Bangla), dark/light mode with system preference detection, and is fully responsive with a mobile-first design approach. The backend follows a 3-layer architecture (Presentation, Business Logic, Data Access) for maintainability and scalability.",
+    "technologies": [
+      "React 18",
+      "Redux Toolkit",
+      "React Router v6",
+      "Tailwind CSS",
+      "DaisyUI v5",
+      "Vite",
+      "Axios",
+      "i18next",
+      "Framer Motion",
+      "React Hook Form",
+      "PDF.js",
+      "Recharts",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "bcryptjs",
+      "Cloudinary",
+      "SSLCommerz",
+      "bKash",
+      "Nagad"
+    ],
+    "features": [
+      "Full E-commerce Platform with Physical & Digital Products",
+      "Secure eBook Reading with IP/Device Restrictions & Watermarking",
+      "Affiliate Marketing System with Commission Tracking & Withdrawals"
+    ],
+    "featuresDescribe": [
+      {
+        "title": "Product Management",
+        "detail": "Complete product catalog with physical and digital products, category and subcategory support, advanced search and filtering, stock management, featured products, and product image galleries. Products can be browsed with pagination, sorting, and category filtering."
+      },
+      {
+        "title": "Shopping Cart & Checkout",
+        "detail": "Persistent shopping cart with quantity management, coupon/promo code application, real-time price calculation, address selection/creation, multiple payment gateway support (SSLCommerz, bKash, Nagad), and order confirmation system."
+      },
+      {
+        "title": "Secure eBook System",
+        "detail": "Secure PDF viewer with IP restriction, device fingerprinting, PDF watermarking, access token management, and reading progress tracking. eBooks are protected against unauthorized access and distribution."
+      },
+      {
+        "title": "Affiliate Program",
+        "detail": "Complete affiliate marketing system with referral link generation, commission tracking, withdrawal request system, performance analytics dashboard, and affiliate profile management. Affiliates can track their referrals and earnings."
+      },
+      {
+        "title": "Admin Dashboard",
+        "detail": "Comprehensive admin panel with real-time analytics, sales reports, user management, product management, order management, affiliate management, commission approval system, withdraw request management, and data visualization with charts and graphs."
+      },
+      {
+        "title": "Multi-Language & Theme Support",
+        "detail": "Full internationalization support for English and Bangla (বাংলা) with dynamic language switching. Dark and light mode with system preference detection, theme persistence, and smooth transitions."
+      },
+      {
+        "title": "Mobile-Based OTP Authentication",
+        "detail": "Secure authentication system using mobile number and OTP verification. JWT token-based session management with refresh token support, role-based access control, and protected routes."
+      }
+    ],
+    "error": [
+      {
+        "problem": "3-Layer Architecture Implementation",
+        "solution": "Implemented proper separation of concerns with Presentation Layer (Routes + Controllers), Business Logic Layer (Services), and Data Access Layer (Models + Repositories) for maintainability and scalability."
+      },
+      {
+        "problem": "eBook Security & Watermarking",
+        "solution": "Implemented IP restriction, device fingerprinting, and PDF watermarking using PDF.js library. Created secure access token system with expiration and validation for protected PDF viewing."
+      },
+      {
+        "problem": "Multiple Payment Gateway Integration",
+        "solution": "Created unified payment service layer to handle SSLCommerz, bKash, and Nagad integrations. Implemented payment verification, callback handling, and error handling for all payment methods."
+      },
+      {
+        "problem": "State Management with Redux Toolkit",
+        "solution": "Implemented Redux Toolkit with proper slice structure, async thunks for API calls, and state normalization. Used proper memoization to prevent unnecessary re-renders and optimize performance."
+      },
+      {
+        "problem": "Multi-Language Support",
+        "solution": "Integrated i18next with react-i18next for translation management. Created translation files for English and Bangla, implemented language detection, and dynamic language switching with localStorage persistence."
+      }
+    ],
+    "image": "https://res.cloudinary.com/dbnmcsoch/image/upload/v1766680735/Screenshot_2025-12-25_223812_wzdapr.png",
+    "images": [
+      "https://res.cloudinary.com/dbnmcsoch/image/upload/v1766680735/Screenshot_2025-12-25_223812_wzdapr.png",
+      "https://res.cloudinary.com/dbnmcsoch/image/upload/v1766680735/Screenshot_2025-12-25_223838_wrnmaj.png",
+      "https://res.cloudinary.com/dbnmcsoch/image/upload/v1766680735/Screenshot_2025-12-25_223823_tqk6w5.png"
+    ],
+    "githubC": "https://github.com/Pullock4981/eBook_Frontend",
+    "githubS": "https://github.com/Pullock4981/eBook_Backend",
+    "live": "https://ebook4981.netlify.app/"
+  },
+  {
+    "id": 2,
+    "title": "CourseMaster",
+    "category": "React.js",
+    "description": "CourseMaster is a modern E-learning platform where students can browse, purchase, and consume courses. The full-stack application provides an intuitive interface for students to enroll in courses, watch video lectures, complete assignments, and take quizzes. Administrators can manage courses, track enrollments, review assignments, and view analytics through a dedicated admin dashboard.",
+    "longDescription": "CourseMaster is a comprehensive E-learning platform built with React 19, Redux Toolkit, and Tailwind CSS for the frontend, and Node.js, Express.js, and MongoDB for the backend. The platform enables students to browse courses with advanced filtering, search, and sorting capabilities. Students can enroll in courses, watch video lectures integrated with YouTube, mark lessons as complete, track learning progress, submit assignments (text or Google Drive links), and take quizzes with immediate score feedback.\n\nThe admin dashboard provides comprehensive course management features including creating, updating, and deleting courses, adding detailed course syllabus with modules, lessons, videos, assignments, and quizzes. Admins can manage course batches, view all enrollments, review and grade student assignments, and access analytics with enrollment trends and platform statistics.\n\nThe backend API is built with Express.js 5, MongoDB, and JWT authentication. It includes features like email notifications for new users, admin registration with secret keys, protected routes with role-based access control, and comprehensive API documentation. The platform is deployed on Netlify (frontend) and Vercel (backend).",
+    "technologies": [
+      "React 19",
+      "Vite",
+      "Redux Toolkit",
+      "React Router DOM",
+      "Tailwind CSS",
+      "DaisyUI",
+      "Axios",
+      "Node.js",
+      "Express.js 5",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "bcrypt",
+      "Zod",
+      "Nodemailer"
+    ],
+    "features": [
+      "Full-Stack E-learning Platform with Student & Admin Dashboards",
+      "Course Management with Syllabus, Videos, Assignments & Quizzes",
+      "Real-time Progress Tracking & Analytics Dashboard"
+    ],
+    "featuresDescribe": [
+      {
+        "title": "Student Features",
+        "detail": "Students can browse courses with pagination, search, sorting, and filtering. They can enroll in courses, watch video lectures (YouTube integration), mark lessons as complete, track learning progress, submit assignments (text or Google Drive links), and take quizzes with immediate score feedback."
+      },
+      {
+        "title": "Admin Dashboard",
+        "detail": "Administrators can create, update, and delete courses, add detailed course syllabus with modules, lessons, videos, assignments, and quizzes. They can manage course batches, view all enrollments, review and grade student assignments, filter enrollments by course/student, and access analytics with enrollment trends."
+      },
+      {
+        "title": "Authentication & Security",
+        "detail": "JWT-based authentication with role-based access control. Admin registration with secret keys, password hashing with bcrypt, protected routes with middleware, and input validation with Zod for secure data handling."
+      },
+      {
+        "title": "Analytics & Reporting",
+        "detail": "Admin analytics dashboard with enrollment trends over the last 30 days, top courses by enrollments, and platform-wide statistics including total enrollments, courses, students, and instructors."
+      },
+      {
+        "title": "Email Notifications",
+        "detail": "Automatic welcome emails sent to new users upon registration using Nodemailer. Email sending is non-blocking and won't fail registration if email service is unavailable."
+      }
+    ],
+    "error": [
+      {
+        "problem": "State Management Complexity with Redux",
+        "solution": "Implemented Redux Toolkit with proper slice structure and async thunks for API calls. Used proper state normalization and memoization to prevent unnecessary re-renders."
+      },
+      {
+        "problem": "Video Integration with YouTube",
+        "solution": "Integrated YouTube iframe API for video playback. Handled video loading states, error handling, and proper cleanup on component unmount to prevent memory leaks."
+      },
+      {
+        "problem": "Assignment Submission with Google Drive Links",
+        "solution": "Implemented validation for both text and Google Drive link formats. Added regex patterns to validate Google Drive link structure and ensure proper access permissions."
+      },
+      {
+        "problem": "Admin Route Protection",
+        "solution": "Created protected route components that verify JWT tokens and user roles. Implemented middleware on backend to check admin role before allowing access to admin endpoints."
+      }
+    ],
+    "image": "https://res.cloudinary.com/dbnmcsoch/image/upload/v1766679162/Screenshot_2025-12-25_221033_tx5qwc.png",
+    "images": [
+      "https://res.cloudinary.com/dbnmcsoch/image/upload/v1766679162/Screenshot_2025-12-25_221033_tx5qwc.png",
+      "https://res.cloudinary.com/dbnmcsoch/image/upload/v1766679162/Screenshot_2025-12-25_221054_nikaku.png",
+      "https://res.cloudinary.com/dbnmcsoch/image/upload/v1766679162/Screenshot_2025-12-25_221159_cd3hsk.png"
+    ],
+    "githubC": "https://github.com/Pullock4981/courseMaster_frontEnd",
+    "githubS": "https://github.com/Pullock4981/courseMaster_Backend",
+    "live": "https://course-master4981.netlify.app/"
+  },
+  {
+    "id": 3,
     "title": "PawsNest",
+    "category": "React.js",
     "description": "PawsNest is a pet adoption platform built with React that allows users to browse, add, and adopt pets. Featuring a fully responsive UI with Tailwind CSS and DaisyUI v4, it supports role-based dashboards, Firebase authentication, and dynamic theme switching between light and dark modes.",
     "longDescription": "PawsNest is a full-stack pet adoption web application designed to help individuals discover and adopt pets like dogs, cats, rabbits, and more. Users can sign up and log in through Firebase Authentication and navigate between various sections of the app including the homepage, pet category section, user dashboard, and admin dashboard. Users can list their own pets for adoption, update information, or mark pets as adopted. Admins have extended control to view all users and manage access.\n\nThe site also includes a donation feature (integrated with Stripe), a visually engaging call-to-action area, and a beautifully styled About Us page. The application is built using React for the front-end, Express.js and MongoDB for the back-end, and uses TailwindCSS with DaisyUI for a clean and responsive UI. All API routes are protected properly, and user roles (admin/user) are enforced both in the client and server sides for security.",
     "technologies": [
@@ -61,14 +237,20 @@
         "solution": "TanStack Table v8 required memoized column and row data. Used `useMemo` hook properly and passed correct data formats to avoid blank rows."
       }
     ],
-    "image": "https://i.ibb.co/zHQhbc8q/Screenshot-2025-07-30-143240.png",
+    "image": "https://res.cloudinary.com/dbnmcsoch/image/upload/v1766676296/Screenshot_2025-07-30_143240_bewqvt.png",
+    "images": [
+      "https://res.cloudinary.com/dbnmcsoch/image/upload/v1766676296/Screenshot_2025-07-30_143240_bewqvt.png",
+      "https://i.ibb.co/zHQhbc8q/Screenshot-2025-07-30-143240.png",
+      "https://i.ibb.co/zHQhbc8q/Screenshot-2025-07-30-143240.png"
+    ],
     "githubC": "https://github.com/Pullock4981/paw_nest_client",
     "githubS": "https://github.com/Pullock4981/paw_nest_server",
     "live": "https://petnest4981.netlify.app/"
   },
   {
-    "id": 2,
+    "id": 4,
     "title": "ForkFlow",
+    "category": "React.js",
     "description": "ForkFlow is a restaurant management web application that enables users to explore, add, and order food items. Built with React and secured with Firebase authentication, it features a fully responsive UI and role-based functionalities for both general users and food creators.",
     "longDescription": "ForkFlow is a full-stack restaurant management platform where users can browse all available food items, place orders, manage their own listings, and view order history. Authenticated users can list their own food items, update them, or remove them from the platform. The application also distinguishes between food creators and general users, ensuring proper permissions.\n\nThe platform includes a dynamic search and sort system, a clean responsive interface using Tailwind CSS and DaisyUI, and robust backend APIs built with Express.js and MongoDB. Firebase Authentication provides secure login and user session handling. The project supports token-based auth forwarding for secure communication between client and server.",
     "technologies": [
@@ -128,13 +310,19 @@
       }
     ],
     "image": "https://i.ibb.co/S4rPYJ5g/p-2.png",
+    "images": [
+      "https://i.ibb.co/S4rPYJ5g/p-2.png",
+      "https://i.ibb.co/S4rPYJ5g/p-2.png",
+      "https://i.ibb.co/S4rPYJ5g/p-2.png"
+    ],
     "githubC": "https://github.com/Pullock4981/resturant-app-client-side",
     "githubS": "https://github.com/Pullock4981/resturent-server",
     "live": "https://resturent-clint-side.netlify.app/"
   },
   {
-    "id": 3,
+    "id": 5,
     "title": "HobbyHub",
+    "category": "React.js",
     "description": "Hobby Hub is a modern React app for discovering, joining, or creating hobby groups. It features Tailwind CSS, DaisyUI themes, Firebase authentication, dark/light mode, and animated stats, offering a seamless, interactive user experience for hobby enthusiasts.",
     "longDescription": "HobbyHub is a community-based platform where users can explore, join, or create hobby groups based on their personal interests. Built with a modern tech stack including React, Firebase, and MongoDB, the application allows authenticated users to interact with various groups, track participation stats, and manage their own communities. It supports light/dark mode, responsive layout, and category-based filtering for an immersive experience.\n\nThe backend is powered by Node.js and Express.js for efficient API handling. Firebase Authentication ensures secure user management, while MongoDB stores group and user data. HobbyHub also features animated counters for group metrics, and smooth UI transitions powered by Framer Motion.",
     "technologies": [
@@ -193,6 +381,11 @@
       }
     ],
     "image": "https://i.ibb.co/6RrTySwM/p-1.png",
+    "images": [
+      "https://i.ibb.co/6RrTySwM/p-1.png",
+      "https://i.ibb.co/6RrTySwM/p-1.png",
+      "https://i.ibb.co/6RrTySwM/p-1.png"
+    ],
     "githubC": "https://github.com/Pullock4981/hobby-hub-client-side",
     "githubS": "https://github.com/Pullock4981/hobby-hub-server-side",
     "live": "https://hobbyhub-4981.netlify.app/"

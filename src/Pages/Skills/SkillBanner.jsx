@@ -2,7 +2,7 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
 import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaGithub } from 'react-icons/fa';
-import { SiJavascript, SiMongodb, SiExpress, SiTailwindcss } from 'react-icons/si';
+import { SiJavascript, SiMongodb, SiExpress, SiTailwindcss, SiNextdotjs } from 'react-icons/si';
 import { motion } from 'framer-motion';
 import { FaArrowRight } from 'react-icons/fa';
 
@@ -14,6 +14,7 @@ const SkillBanner = () => {
             <Marquee speed={50} gradient={false}>
                 <div className="flex gap-12 text-5xl text-sky-400 items-center">
                     <FaReact title="React" />
+                    <SiNextdotjs title="Next.js" className="text-white" />
                     <SiJavascript title="JavaScript" />
                     <FaHtml5 title="HTML5" className="text-orange-500" />
                     <FaCss3Alt title="CSS3" className="text-blue-500" />

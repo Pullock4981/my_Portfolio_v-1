@@ -10,7 +10,7 @@ const Education = () => {
                 {/* bsc */}
                 <div className='bg-gradient-to-br from-[#2b2b2b] to-[#131212] rounded-3xl p-6'>
                     <p className='text-gray-400 mb-1'>
-                        2022 - Ongoing
+                        2022 - 2025
                     </p>
                     <h1 className='text-lg font-semibold mb-1'>
                         BSc in Computer Science & Engineering

@@ -1,30 +1,80 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router";
+import ImageCarousel from "../../Components/ImageCarousel/ImageCarousel";
 
 const ProjectDetails = () => {
     const { id } = useParams();
     const [project, setProject] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
+        setLoading(true);
         fetch('/projects.json')
-            .then(res => res.json())
+            .then(res => {
+                if (!res.ok) throw new Error('Failed to fetch');
+                return res.json();
+            })
             .then(data => {
                 const found = data.find(p => p.id.toString() === id);
+                if (!found) throw new Error('Project not found');
                 setProject(found);
-            });
+                setError(null);
+            })
+            .catch(err => {
+                setError(err.message);
+            })
+            .finally(() => setLoading(false));
     }, [id]);
 
-    if (!project) return <div className="text-white text-center mt-10">Loading project...</div>;
+    if (loading) {
+        return (
+            <div className="bg-black text-white min-h-screen flex items-center justify-center">
+                <div className="text-center">
+                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-white mx-auto mb-4"></div>
+                    <p>Loading project...</p>
+                </div>
+            </div>
+        );
+    }
+
+    if (error) {
+        return (
+            <div className="bg-black text-white min-h-screen flex items-center justify-center">
+                <div className="text-center text-red-500">
+                    <p>Error: {error}</p>
+                    <Link to="/projects" className="text-blue-400 underline hover:text-blue-300 mt-4 inline-block">
+                        ← Back to Projects
+                    </Link>
+                </div>
+            </div>
+        );
+    }
+
+    if (!project) {
+        return (
+            <div className="bg-black text-white min-h-screen flex items-center justify-center">
+                <div className="text-center text-gray-400">
+                    <p>Project not found</p>
+                    <Link to="/projects" className="text-blue-400 underline hover:text-blue-300 mt-4 inline-block">
+                        ← Back to Projects
+                    </Link>
+                </div>
+            </div>
+        );
+    }
 
     return (
         <div className="bg-black text-white min-h-screen p-6 lg:p-10 max-w-6xl mx-auto space-y-8">
             <h1 className="text-4xl font-bold text-center">{project.title}</h1>
 
-            <img
-                src={project.image}
-                alt={project.title}
-                className="rounded-xl w-full object-cover shadow-lg"
-            />
+            <div className="w-full h-64 lg:h-96">
+                <ImageCarousel 
+                    images={project.images || project.image} 
+                    title={project.title}
+                    autoPlayInterval={3000}
+                />
+            </div>
 
             <div>
                 <p className="text-gray-300 text-lg">{project.description}</p>

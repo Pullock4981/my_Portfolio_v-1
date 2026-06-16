@@ -91,13 +91,18 @@
 
 import React from 'react';
 import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaGithub } from 'react-icons/fa';
-import { SiJavascript, SiMongodb, SiExpress, SiTailwindcss, SiFirebase } from 'react-icons/si';
+import { SiJavascript, SiMongodb, SiExpress, SiTailwindcss, SiFirebase, SiNextdotjs } from 'react-icons/si';
 
 const skills = [
     {
         name: 'React',
         icon: <FaReact className="text-sky-400 text-5xl" />,
         description: 'Modern JavaScript library for building responsive and scalable user interfaces using component-based architecture.',
+    },
+    {
+        name: 'Next.js',
+        icon: <SiNextdotjs className="text-white text-5xl" />,
+        description: 'React-based framework for production-ready applications with server-side rendering, static site generation, and optimized performance.',
     },
     {
         name: 'JavaScript',
