@@ -54,23 +54,23 @@ const JavaScriptProjects = () => {
                         ))}
                     </div>
                 </div>
-                <div className="flex gap-3 mt-auto flex-wrap">
+                <div className="grid grid-cols-2 md:flex md:flex-wrap gap-3 mt-auto">
                     {project.live && (
-                        <a href={project.live} target="_blank" rel="noopener noreferrer" className="bg-sky-600 hover:bg-sky-700 px-4 py-2 rounded text-sm">
+                        <a href={project.live} target="_blank" rel="noopener noreferrer" className="bg-sky-600 hover:bg-sky-700 px-2 sm:px-4 py-2 rounded text-sm text-center">
                             Live
                         </a>
                     )}
                     {project.githubC && (
-                        <a href={project.githubC} target="_blank" rel="noopener noreferrer" className="bg-gray-600 hover:bg-gray-700 px-4 py-2 rounded text-sm">
+                        <a href={project.githubC} target="_blank" rel="noopener noreferrer" className="bg-gray-600 hover:bg-gray-700 px-2 sm:px-4 py-2 rounded text-sm text-center">
                             Client Code
                         </a>
                     )}
                     {project.githubS && (
-                        <a href={project.githubS} target="_blank" rel="noopener noreferrer" className="bg-gray-600 hover:bg-gray-700 px-4 py-2 rounded text-sm">
+                        <a href={project.githubS} target="_blank" rel="noopener noreferrer" className="bg-gray-600 hover:bg-gray-700 px-2 sm:px-4 py-2 rounded text-sm text-center">
                             Server Code
                         </a>
                     )}
-                    <Link to={`/projectDetails/${project.id}`} className="bg-green-600 hover:bg-green-700 px-4 py-2 rounded text-sm">
+                    <Link to={`/projectDetails/${project.id}`} className="bg-green-600 hover:bg-green-700 px-2 sm:px-4 py-2 rounded text-sm text-center">
                         Details
                     </Link>
                 </div>

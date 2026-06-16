@@ -31,7 +31,7 @@
 // export default ProjectBanner;
 
 import React from 'react';
-import prijectBannerImg from "../../assets/project.png";
+import projectBannerImg from "../../assets/project.png";
 import { motion } from 'framer-motion';
 import { FaArrowRight } from 'react-icons/fa';
 
@@ -42,7 +42,7 @@ const ProjectBanner = () => {
 
             <div className='flex justify-center items-center'>
                 <motion.img
-                    src={prijectBannerImg}
+                    src={projectBannerImg}
                     alt="Project Preview"
                     className="w-32"
                     initial={{ opacity: 0, scale: 0.8 }}

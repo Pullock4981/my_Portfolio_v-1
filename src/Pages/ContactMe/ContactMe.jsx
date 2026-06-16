@@ -11,14 +11,16 @@ const ContactMe = () => {
 
 
     return (
-        <div className='flex flex-col lg:flex-row gap-10 p-6 bg-black text-white max-w-7xl md:mx-auto mb-4 md:px-20 px-4'>
-            <div className='lg:w-[30%]'>
-                {/* left side */}
-                <LeftSideComponent></LeftSideComponent>
-            </div>
-            <div className='lg:w-[70%]'>
-                {/* right side */}
-                <RightSideComponent></RightSideComponent>
+        <div className='flex-grow flex items-center justify-center py-10 md:py-0'>
+            <div className='flex flex-col lg:flex-row items-center gap-10 p-6 bg-black text-white w-full max-w-7xl md:mx-auto md:px-20 px-4'>
+                <div className='lg:w-[30%] w-full'>
+                    {/* left side */}
+                    <LeftSideComponent></LeftSideComponent>
+                </div>
+                <div className='lg:w-[70%] w-full'>
+                    {/* right side */}
+                    <RightSideComponent></RightSideComponent>
+                </div>
             </div>
         </div>
     );

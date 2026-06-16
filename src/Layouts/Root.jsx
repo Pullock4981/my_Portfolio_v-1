@@ -5,9 +5,9 @@ import Footer from '../Shared/Footer';
 
 const Root = () => {
     return (
-        <div>
+        <div className="flex flex-col min-h-screen">
             <NavBar></NavBar>
-            <div className='min-h-[calc(100vh-276px)]'>
+            <div className="flex-grow flex flex-col">
                 <Outlet></Outlet>
             </div>
             <Footer></Footer>

@@ -18,12 +18,8 @@ const AboutContain = () => {
                         <h2 className='lg:text-3xl text-xl uppercase font-bold'>
                             Syed Ashik Mahmud Pullock
                         </h2>
-                        <p className='mt-4'>
-                            I'm a dedicated MERN stack developer with a strong passion for creating dynamic,
-                            responsive, and scalable web applications. With expertise in MongoDB, Express.js, React,
-                            and Node.js, I enjoy building robust backends and seamless user interfaces. I take pride
-                            in writing clean, maintainable code and transforming
-                            complex requirements into intuitive digital experiences that are both functional and user-focused.
+                        <p className='mt-4 text-gray-300 leading-relaxed'>
+                            I am a passionate MERN Stack Developer dedicated to building intuitive user interfaces and efficient backend systems. I specialize in delivering end-to-end solutions within collaborative, agile environments. With hands-on experience in crafting scalable, reusable UI components and handling database optimizations, I strive to ensure responsive, consistent designs and cross-browser support for seamless digital experiences.
                         </p>
                     </div>
                 </div>

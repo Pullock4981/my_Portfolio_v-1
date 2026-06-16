@@ -11,7 +11,7 @@ const SkillBanner = () => {
         <div className="bg-gradient-to-br from-[#2b2b2b] to-[#131212] text-gray-400 hover:text-white p-8 rounded-3xl">
             <h1 className=" text-2xl font-bold mb-6 text-center">Tech Stack</h1>
 
-            <Marquee speed={50} gradient={false}>
+            <Marquee speed={50} gradient={false} direction="right">
                 <div className="flex gap-12 text-5xl text-sky-400 items-center">
                     <FaReact title="React" />
                     <SiNextdotjs title="Next.js" className="text-white" />

@@ -40,7 +40,7 @@ const Education = () => {
                         Secondary School Certificate
                     </h1>
                     <p className='text-gray-400'>
-                        Daffodil International University
+                        Brahmondi K. K. M. Govt. High School
                     </p>
                 </div>
             </div>

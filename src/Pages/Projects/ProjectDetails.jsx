@@ -66,6 +66,13 @@ const ProjectDetails = () => {
 
     return (
         <div className="bg-black text-white min-h-screen p-6 lg:p-10 max-w-6xl mx-auto space-y-8">
+            {/* Back Button */}
+            <div className="-mb-4">
+                <Link to="/projects" className="text-sky-400 underline hover:text-sky-300 inline-block">
+                    ← Back to Projects
+                </Link>
+            </div>
+
             <h1 className="text-4xl font-bold text-center">{project.title}</h1>
 
             <div className="w-full h-64 lg:h-96">
@@ -168,12 +175,6 @@ const ProjectDetails = () => {
                 </a>
             </div>
 
-            {/* Back Button */}
-            <div className="mt-8">
-                <Link to="/projects" className="text-blue-400 underline hover:text-blue-300">
-                    ← Back to Projects
-                </Link>
-            </div>
         </div>
     );
 };

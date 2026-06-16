@@ -1,5 +1,96 @@
 [
   {
+    "id": 12,
+    "title": "Stylei'n By Monny",
+    "category": "React.js",
+    "description": "A comprehensive full-stack e-commerce application for clothing and apparel.",
+    "longDescription": "Cloth eCommerce is a robust full-stack web application built using the MERN stack. It offers a seamless shopping experience for users to browse clothing items, add them to a cart, and securely checkout. The backend handles inventory management and user authentication.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Tailwind CSS"
+    ],
+    "features": [
+      "Product Catalog & Filtering",
+      "Shopping Cart",
+      "Secure User Authentication"
+    ],
+    "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1000&auto=format&fit=crop",
+    "githubC": "https://github.com/Pullock4981/cloth_ecommerce_frontend",
+    "githubS": "https://github.com/Pullock4981/cloth_ecommerce_backend",
+    "live": "https://cloth-ecommerce-frontend-nine.vercel.app/"
+  },
+  {
+    "id": 15,
+    "title": "AI Assistance Assignment",
+    "category": "React.js",
+    "description": "An AI-powered code review and assignment assistance tool built with TypeScript and React.",
+    "longDescription": "This application leverages AI to provide automated code reviews and assignment feedback. Built with TypeScript for type safety, the React frontend communicates with a Node.js backend to process user submissions and return intelligent, context-aware suggestions.",
+    "technologies": [
+      "TypeScript",
+      "React",
+      "Node.js",
+      "Express",
+      "AI Integration"
+    ],
+    "features": [
+      "Automated Code Review",
+      "Real-time Feedback",
+      "Assignment Tracking"
+    ],
+    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1000&auto=format&fit=crop",
+    "githubC": "https://github.com/Pullock4981/aiAssistanceAssignment_frontEnd",
+    "githubS": "https://github.com/Pullock4981/aiAssiagmentAssistance_backend",
+    "live": "https://ai-assistance-assignment-front-end.vercel.app/"
+  },
+  {
+    "id": 13,
+    "title": "Phoenix Dev Labs",
+    "category": "React.js",
+    "description": "A professional agency website with a dedicated backend for managing services and client inquiries.",
+    "longDescription": "Phoenix Dev Labs serves as a dynamic agency portfolio and service management platform. Built with React and Node.js, it showcases company services and projects while featuring a secure backend dashboard to handle client messages and service requests.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB"
+    ],
+    "features": [
+      "Dynamic Service Listings",
+      "Admin Dashboard",
+      "Contact Management"
+    ],
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1000&auto=format&fit=crop",
+    "githubC": "https://github.com/Pullock4981/phoenix_dev_labs_frontend",
+    "githubS": "https://github.com/Pullock4981/phoenix_dev_labs_backend",
+    "live": "https://phoenixdevlabs.netlify.app/"
+  },
+  {
+    "id": 14,
+    "title": "materials.store",
+    "category": "React.js",
+    "description": "A modern e-commerce platform built with the MERN stack featuring advanced state management.",
+    "longDescription": "ARC eCommerce is an advanced online storefront offering full e-commerce capabilities. From browsing products to managing orders, the platform ensures high performance and reliability through its React frontend and scalable Express/MongoDB backend.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Redux"
+    ],
+    "features": [
+      "Inventory Management",
+      "Order Tracking",
+      "User Dashboard"
+    ],
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1000&auto=format&fit=crop",
+    "githubC": "https://github.com/Pullock4981/arc_eCommerce_frontend",
+    "githubS": "https://github.com/Pullock4981/arc_eCommerce_backend",
+    "live": "https://materials4981.netlify.app/"
+  },
+  {
     "id": 1,
     "title": "eBook",
     "category": "React.js",
@@ -389,5 +480,167 @@
     "githubC": "https://github.com/Pullock4981/hobby-hub-client-side",
     "githubS": "https://github.com/Pullock4981/hobby-hub-server-side",
     "live": "https://hobbyhub-4981.netlify.app/"
+  },
+  {
+    "id": 6,
+    "title": "Penguin Fashion",
+    "category": "HTML & CSS",
+    "description": "A responsive e-commerce landing page for a fashion brand, built completely with HTML and CSS.",
+    "longDescription": "Penguin Fashion is a fully responsive e-commerce landing page built with HTML5 and CSS3. It features a clean, modern design, CSS Grid/Flexbox layouts, and a mobile-first approach to showcase clothing products and accessories.",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Responsive Design"
+    ],
+    "features": [
+      "Responsive E-commerce Layout",
+      "Modern UI",
+      "Fast Loading"
+    ],
+    "image": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=1000&auto=format&fit=crop",
+    "githubC": "https://github.com/Pullock4981/Penguin-Fashion",
+    "live": "https://pullock4981.github.io/Penguin-Fashion/"
+  },
+  {
+    "id": 7,
+    "title": "Biker Zone",
+    "category": "HTML & CSS",
+    "description": "A dynamic and responsive landing page for a motorcycle shop, utilizing modern CSS features.",
+    "longDescription": "Biker Zone is a landing page built using HTML5 and Tailwind CSS/Bootstrap concepts. It features smooth scrolling, interactive hover effects, and a responsive grid system to display various bike models.",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS/Bootstrap"
+    ],
+    "features": [
+      "Hero Section Carousel",
+      "Responsive Grid Layout",
+      "Interactive UI Elements"
+    ],
+    "image": "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1000&auto=format&fit=crop",
+    "githubC": "https://github.com/Pullock4981/Biker-zone",
+    "live": "https://pullock4981.github.io/Biker-zone/"
+  },
+  {
+    "id": 8,
+    "title": "Tea House",
+    "category": "HTML & CSS",
+    "description": "An elegant and visually appealing website for a premium tea shop.",
+    "longDescription": "Tea House is an elegant, static website crafted with HTML and CSS. It focuses on typography, spacing, and high-quality imagery to provide a premium feel for a tea brand. It includes sections for featured products, client reviews, and a newsletter signup.",
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "CSS Flexbox"
+    ],
+    "features": [
+      "Elegant Typography",
+      "Flexbox Layouts",
+      "Cross-browser Compatibility"
+    ],
+    "image": "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?q=80&w=1000&auto=format&fit=crop",
+    "githubC": "https://github.com/Pullock4981/Tea-House",
+    "live": "https://pullock4981.github.io/Tea-House/"
+  },
+  {
+    "id": 9,
+    "title": "Admin Dashboard",
+    "category": "React.js",
+    "description": "A comprehensive admin dashboard built with React, Vite, and Tailwind CSS. Features interactive charts and data management.",
+    "longDescription": "Admin Dashboard is a modern, responsive web application built with JavaScript, React, and Tailwind CSS. It features dynamic routing, smooth animations, and interactive charts for managing and visualizing data efficiently.",
+    "technologies": [
+      "JavaScript",
+      "React",
+      "Tailwind CSS",
+      "Recharts"
+    ],
+    "features": [
+      "Interactive Data Visualization",
+      "Responsive Sidebar",
+      "Dynamic Routing"
+    ],
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
+    "githubC": "https://github.com/Pullock4981/Admin-dashboard",
+    "live": "https://admin-dashboard-react-4981.netlify.app/"
+  },
+  {
+    "id": 10,
+    "title": "PH Tube",
+    "category": "JavaScript",
+    "description": "A video sharing platform clone built using vanilla JavaScript and DOM manipulation.",
+    "longDescription": "PH Tube is a YouTube-like application built primarily with Vanilla JavaScript. It fetches data from external APIs to display videos, categories, and view counts. Features include sorting by views, category filtering, and dynamic DOM rendering.",
+    "technologies": [
+      "Vanilla JavaScript",
+      "REST API",
+      "HTML5",
+      "CSS3"
+    ],
+    "features": [
+      "Dynamic Content Rendering",
+      "API Integration",
+      "Sorting & Filtering"
+    ],
+    "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000&auto=format&fit=crop",
+    "githubC": "https://github.com/Pullock4981/ph-tube",
+    "live": "https://ph-tube4981.netlify.app/"
+  },
+  {
+    "id": 11,
+    "title": "Job Portal",
+    "category": "JavaScript",
+    "description": "A comprehensive job portal frontend allowing users to browse and search for jobs.",
+    "longDescription": "Job Portal is a functional web interface built using JavaScript, React, and modern CSS. It provides a seamless experience for job seekers to browse available positions, filter by categories, and view detailed job descriptions.",
+    "technologies": [
+      "JavaScript",
+      "React Router",
+      "Tailwind CSS"
+    ],
+    "features": [
+      "Job Filtering",
+      "Detailed Job Views",
+      "Responsive Design"
+    ],
+    "image": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=1000&auto=format&fit=crop",
+    "githubC": "https://github.com/Pullock4981/Job-portal",
+    "live": "https://job-portal-4981.netlify.app/"
+  },
+  {
+    "id": 16,
+    "title": "Alphabet Clash",
+    "category": "JavaScript",
+    "description": "A simple, browser-based letter-matching game built with HTML, CSS, and JavaScript.",
+    "longDescription": "Alphabet Clash is an interactive letter-matching game designed to help users improve their typing speed and keyboard familiarity. It features dynamic letter generation and real-time score tracking.",
+    "technologies": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "features": [
+      "Real-time Score Tracking",
+      "Dynamic Key Generation",
+      "Interactive UI"
+    ],
+    "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1000&auto=format&fit=crop",
+    "githubC": "https://github.com/Pullock4981/Alphabet-Clash",
+    "live": ""
+  },
+  {
+    "id": 17,
+    "title": "Medi-Aid",
+    "category": "JavaScript",
+    "description": "A responsive front-end hospital management interface built with HTML, CSS, Tailwind CSS, and JavaScript.",
+    "longDescription": "Medi-Aid is a comprehensive hospital management dashboard designed for seamless healthcare administration. Built using vanilla JavaScript and Tailwind CSS, it offers an intuitive UI for managing patient records and hospital resources.",
+    "technologies": [
+      "JavaScript",
+      "HTML",
+      "Tailwind CSS"
+    ],
+    "features": [
+      "Responsive Dashboard",
+      "Patient Management UI",
+      "Modern Design"
+    ],
+    "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=1000&auto=format&fit=crop",
+    "githubC": "https://github.com/Pullock4981/Hospital-Management_system",
+    "live": ""
   }
 ]

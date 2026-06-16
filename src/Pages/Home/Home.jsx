@@ -6,6 +6,7 @@ import ProjectBanner from '../Projects/ProjectBanner';
 import { Link } from 'react-router';
 import CountCard from '../../Components/CountCard/CountCard';
 import ContactBanner from '../../Components/ContactBanner/ContactBanner';
+import FeaturedProjects from '../../Components/FeaturedProjects/FeaturedProjects';
 
 const Home = () => {
     return (
@@ -33,6 +34,8 @@ const Home = () => {
 
                 </div>
             </div>
+
+            <FeaturedProjects />
             <div className='flex lg:flex-row flex-col gap-6 max-w-7xl md:mx-auto mb-4 md:px-20 px-4'>
                 <div className='lg:w-[50%]'>
                     <CountCard></CountCard>

@@ -37,11 +37,13 @@ const Projects = () => {
     );
     
     const htmlCssProjects = projects.filter(p => 
-        p.category === 'HTML/CSS' || 
-        (!p.technologies?.some(tech => 
-            tech.toLowerCase().includes('react') || 
-            tech.toLowerCase().includes('next')
-        ))
+        p.category === 'HTML/CSS' || p.category === 'HTML & CSS'
+    );
+
+    const javascriptProjects = projects.filter(p => 
+        p.category === 'JavaScript' || 
+        (p.technologies?.some(tech => tech.toLowerCase().includes('javascript')) && 
+         !p.technologies?.some(tech => tech.toLowerCase().includes('react') || tech.toLowerCase().includes('next')))
     );
 
     // Project Card Component
@@ -62,23 +64,23 @@ const Projects = () => {
                         ))}
                     </div>
                 </div>
-                <div className="flex gap-3 mt-auto flex-wrap">
+                <div className="grid grid-cols-2 md:flex md:flex-wrap gap-3 mt-auto">
                     {project.live && (
-                        <a href={project.live} target="_blank" rel="noopener noreferrer" className="bg-sky-600 hover:bg-sky-700 px-4 py-2 rounded text-sm">
+                        <a href={project.live} target="_blank" rel="noopener noreferrer" className="bg-sky-600 hover:bg-sky-700 px-2 sm:px-4 py-2 rounded text-sm text-center">
                             Live
                         </a>
                     )}
                     {project.githubC && (
-                        <a href={project.githubC} target="_blank" rel="noopener noreferrer" className="bg-gray-600 hover:bg-gray-700 px-4 py-2 rounded text-sm">
+                        <a href={project.githubC} target="_blank" rel="noopener noreferrer" className="bg-gray-600 hover:bg-gray-700 px-2 sm:px-4 py-2 rounded text-sm text-center">
                             Client Code
                         </a>
                     )}
                     {project.githubS && (
-                        <a href={project.githubS} target="_blank" rel="noopener noreferrer" className="bg-gray-600 hover:bg-gray-700 px-4 py-2 rounded text-sm">
+                        <a href={project.githubS} target="_blank" rel="noopener noreferrer" className="bg-gray-600 hover:bg-gray-700 px-2 sm:px-4 py-2 rounded text-sm text-center">
                             Server Code
                         </a>
                     )}
-                    <Link to={`/projectDetails/${project.id}`} className="bg-green-600 hover:bg-green-700 px-4 py-2 rounded text-sm">
+                    <Link to={`/projectDetails/${project.id}`} className="bg-green-600 hover:bg-green-700 px-2 sm:px-4 py-2 rounded text-sm text-center">
                         Details
                     </Link>
                 </div>
@@ -95,7 +97,7 @@ const Projects = () => {
 
     if (loading) {
         return (
-            <div className="bg-black text-white min-h-screen flex items-center justify-center">
+            <div className="bg-black text-white flex py-20 items-center justify-center">
                 <div className="text-center">
                     <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-white mx-auto mb-4"></div>
                     <p>Loading projects...</p>
@@ -106,7 +108,7 @@ const Projects = () => {
 
     if (error) {
         return (
-            <div className="bg-black text-white min-h-screen flex items-center justify-center">
+            <div className="bg-black text-white flex py-20 items-center justify-center">
                 <div className="text-center text-red-500">
                     <p>Error: {error}</p>
                 </div>
@@ -115,7 +117,7 @@ const Projects = () => {
     }
 
     return (
-        <div className="bg-black text-white min-h-screen max-w-7xl md:mx-auto mt-4 md:px-20 px-4 py-8">
+        <div className="bg-black text-white max-w-7xl md:mx-auto mt-4 md:px-20 px-4 py-8">
             <h1 className="text-4xl font-bold text-center mb-10">My Projects</h1>
             <p className="text-gray-400 text-center mb-12">Browse projects by category</p>
 
@@ -160,15 +162,7 @@ const Projects = () => {
                         <div className="text-5xl mb-4">📜</div>
                         <h2 className="text-2xl font-bold mb-2 text-yellow-400">JavaScript</h2>
                         <p className="text-gray-400 text-sm mb-4">
-                            {projects.filter(p => 
-                                p.category === 'JavaScript' || 
-                                (p.technologies?.some(tech => tech.toLowerCase().includes('javascript')) && 
-                                 !p.technologies?.some(tech => tech.toLowerCase().includes('react') || tech.toLowerCase().includes('next')))
-                            ).length} {projects.filter(p => 
-                                p.category === 'JavaScript' || 
-                                (p.technologies?.some(tech => tech.toLowerCase().includes('javascript')) && 
-                                 !p.technologies?.some(tech => tech.toLowerCase().includes('react') || tech.toLowerCase().includes('next')))
-                            ).length === 1 ? 'Project' : 'Projects'}
+                            {javascriptProjects.length} {javascriptProjects.length === 1 ? 'Project' : 'Projects'}
                         </p>
                         <p className="text-gray-500 text-xs">Vanilla JS projects</p>
                     </div>
@@ -181,11 +175,7 @@ const Projects = () => {
                 <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
                     <span>React/Next.js: {reactProjects.length + nextjsProjects.length}</span>
                     <span>HTML/CSS: {htmlCssProjects.length}</span>
-                    <span>JavaScript: {projects.filter(p => 
-                        p.category === 'JavaScript' || 
-                        (p.technologies?.some(tech => tech.toLowerCase().includes('javascript')) && 
-                         !p.technologies?.some(tech => tech.toLowerCase().includes('react') || tech.toLowerCase().includes('next')))
-                    ).length}</span>
+                    <span>JavaScript: {javascriptProjects.length}</span>
                 </div>
             </div>
         </div>
